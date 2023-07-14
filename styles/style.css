@@ -1,0 +1,596 @@
+
+/* ==============================Common============================== */
+
+
+.Portfolio{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Secgap{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/* ===========================================================================================================
+        Menubar
+===============================================================================================================*/
+
+.MenubarMainSec{
+    background-color: #EEF2FD;
+}
+
+.MenubarMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.ManubarItem2{
+    display: flex;
+    gap: 0px 30px;
+}
+
+.ManubarItem2 a{
+    font-size: 17px;
+    color: #777676;
+}
+
+/* Button menu */
+
+.glow-on-hover {
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #9e9d9d;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #fffefe;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000,#002bff, #ff7300, #fffb00, #48ff00, #00ffd5,  #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #ffffff
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#108a00;
+    box-shadow: 0 4px 15px 0 rgba(72, 65, 172, 0.75);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* ===========================================================================================================
+        Banner
+===============================================================================================================*/
+
+.BannerRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.BannerBg{
+    background-color: #EEF2FD;
+}
+
+.BannerTxtBox h1{
+    color: #474142;
+    font-weight: 700;
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.BannerTxtBox h1 span{
+    color:#14a800;
+    font-weight: 700;
+    font-family: 'DM Serif Display', serif;
+}
+
+.BannerTxtBox p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.BannerTxtBox svg{
+    color: #474142;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.BannerImgDiv img{
+    height: 443px; 
+    text-align: center;
+    border-radius: 0 0 0 10%;
+}
+.BannerImgDiv {
+    text-align: center;
+}
+
+/* ===========================================================================================================
+        Review
+===============================================================================================================*/
+
+.ReviewSec{
+    padding: 40px 0px;
+    background-color: #e9e9e9;
+}
+
+
+.ReviewDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ReviewItem{
+    width: 250px;  
+    padding: 40px 0px; 
+    text-align: center;
+    border: 1px dashed red;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.ReviewItem:hover{
+    border: 1px solid red;
+}
+    
+.ReviewItem h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #474142;
+}
+
+.ReviewItem h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #474142;
+}
+
+
+/* ===========================================================================================================
+        Protfolio
+===============================================================================================================*/
+
+
+.SecProtfolio{
+    background-color: #EEF2FD;
+    padding: 80px 0px;
+    padding-bottom: 100px;
+}
+
+.ProtfolioTxtDiv {
+    width: 50%;
+}
+
+.ProtfolioTxtDiv h2 {
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color:#14a800;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+.Rowotfolio div{
+    margin-bottom: 130px;
+}
+
+.CardSec{
+
+    margin-top: 0px;
+
+}
+
+.Card img{
+    width: 100%;
+    height: 260px;
+    width: 260px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    transform: scale(.6);
+    border-radius: 10px;
+    border: 1px solid red;
+    transition: all 2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 3em;
+    height: 3em;
+
+}
+
+.Card img:hover{
+    transform: scale(1.5);
+    z-index: 100 ;
+}
+
+.ex1 {
+    perspective: 800px;
+  }
+
+
+.card2{
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(30deg);
+     margin: 1.5em auto;
+     font-size: 4em;
+     width: 3em;
+     margin: 1.5em auto;
+     transition: .2s;
+}
+
+.card2:hover{
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(30deg);
+     margin: 1.5em auto;
+     font-size: 4em;
+     width: 3em;
+     margin: 1.5em auto;
+     transform: rotate(0deg);
+   
+}
+
+.card2 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+}
+
+.card2 div:hover{
+    position: absolute;
+   z-index: 5555;
+}
+
+
+.card2 div:nth-child(1){
+    transform: translateZ(1em);
+    position: absolute;
+}
+
+.card2 div:nth-child(1):hover{
+    transform: translateZ(1em);
+    z-index: 1000;
+}
+
+.card2 div:nth-child(2){
+    transform: rotateX(90deg) translateZ(1em);
+
+}
+.card2 div:nth-child(3){
+    transform: rotateY(90deg) translateZ(1em);
+
+}
+.card2 div:nth-child(4){
+    transform: rotateY(-90deg) translateZ(1em);
+
+}
+.card2 div:nth-child(5){
+
+    transform: rotateX(-90deg) translateZ(1em);
+}
+.card2 div:nth-child(6){
+
+    transform: rotateY(-180deg) translateZ(1em);
+}
+
+
+.ViewAll{
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+}
+
+
+/* =============================================================================================
+            Services
+=================================================================================================*/
+
+.ServicesSec{
+    background-color: #EEF2FD;
+    padding: 80px 0px;
+    padding-top: 40px;
+}
+
+.Servicesh2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color:#14a800;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+.ServicesDiv{
+    background-color: #14a800;;
+    padding: 30px;
+    color: #fff;
+    border-radius: 20px;
+    transition: .2s;
+    margin-bottom: 30px;
+}
+
+.ServicesDiv:hover{
+    background-color: #282b27;;
+}
+
+
+.ServicesDiv h2{
+   margin-bottom: 15px;
+}
+
+
+/* =============================================================================================
+        About
+===============================================================================================*/
+
+.AboutSec{
+    background-color: #EEF2FD;
+    padding: 80px 0px;
+    padding-top: 40px;
+}
+
+.Abouth2{
+
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color:#14a800;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+
+}
+
+.progressBox {
+    margin-top: 50px;
+    padding-right: 30%;
+}
+.progressBox h4{
+    color: #474142;
+    margin-bottom: 20px;
+}
+
+.progressBox div{
+    background-color: #14a800;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.progressBox div:nth-child(2){
+    width: 100%;
+}
+.progressBox div:nth-child(3){
+    width: 95%;
+}
+.progressBox div:nth-child(4){
+    width: 70%;
+}
+.progressBox div:nth-child(5){
+    width: 90%;
+}
+.progressBox div:nth-child(6){
+    width: 60%;
+}
+.progressBox div:nth-child(7){
+    width: 90%;
+}
+.progressBox div:nth-child(8){
+    width: 90%;
+}
+.progressBox div:nth-child(9){
+    width: 100%;
+}
+
+/* devlop */
+
+.progressBox div:nth-child(11){
+    width: 30%;
+}
+.progressBox div:nth-child(12){
+    width: 40%;
+}
+.progressBox div:nth-child(13){
+    width: 30%;
+}
+.progressBox div:nth-child(14){
+    width: 40%;
+}
+
+/* Productivity */
+.progressBox div:nth-child(16){
+    width: 80%;
+}
+
+/* Design */
+
+.progressBox div:nth-child(20){
+    width: 50%;
+}
+.progressBox div:nth-child(21){
+    width: 60%;
+}
+.progressBox div:nth-child(22){
+    width: 100%;
+}
+
+/* ===========================================================================================
+            Experence
+===============================================================================================*/
+
+.ExperienceSec{
+    background-color: #EEF2FD;
+    padding-bottom: 50px;
+}
+
+
+
+.Experiencehtdiv {
+    margin-bottom: 40px;
+}
+.Experiencehtdiv h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color:#14a800;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+
+.ExperenceDiv{
+    
+}
+
+.ExperenceDiv h2{
+    margin-bottom: 10px;
+    color: #474142;
+    font-weight: 500;
+}
+
+.ExperenceDiv p{
+    color: #474142;
+}
+
+.FooterSec{
+    padding: 50px;
+    background-color: #EEF2FD;
+}
+
+.BannerTxtBox2 svg{
+    color: #474142;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.BannerTxtBox2 svg:hover{
+    color: #14a800; 
+}
+
+.BannerTxtBox svg:hover{
+    color: #14a800; 
+}
+
+
+/* ==========================================================================================
+        allPortfolioSec
+===========================================================================================*/
+
+.allPortfolioSec{
+    padding: 0px 50px;
+    background-color: #EEF2FD;
+}
+
+.AllPorth2{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color:#14a800;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+
+}
+
+.allportfolioImgDiv{
+    
+}
+
+.allportfolioImgDiv img{
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 1px solid red;
+}
+
+
+
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+    margin-top: 25px !important;
+
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 9.1em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
