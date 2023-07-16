@@ -4,7 +4,8 @@ import React from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 
 import { FaFacebookSquare } from "react-icons/fa";
-import { AiFillLinkedin,AiOutlineTwitter } from "react-icons/ai";
+import { AiFillLinkedin} from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
 
 
 
@@ -41,9 +42,9 @@ const Footer = () => {
                                 <AiFillLinkedin/>
   
                               </Link>
-                              <Link href="#" target='_blank'>
+                              <Link href="https://github.com/Ibrahimcoderx" target='_blank'>
   
-                                <AiOutlineTwitter/>
+                                <BsGithub/>
   
                               </Link>
 

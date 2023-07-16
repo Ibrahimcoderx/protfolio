@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Container,Row,Col } from 'react-bootstrap'
 import React, { useState } from 'react';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+
 
 
 
@@ -44,7 +44,7 @@ const Menubar = () => {
 
                             <div className="ManubarItem3">
 
-                                <button className="glow-on-hover" >Hover Me</button>
+                                <button className="glow-on-hover" >Hire Me</button>
 
                             </div>
 

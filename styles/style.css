@@ -41,6 +41,10 @@
     color: #777676;
 }
 
+.ManubarItem2 a:hover{
+    color: #474646;
+}
+
 /* Button menu */
 
 .glow-on-hover {
@@ -559,6 +563,11 @@
     margin-bottom: 30px;
     border-radius: 20px;
     border: 1px solid red;
+    transition: 0.2s;
+}
+
+.allportfolioImgDiv img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -588,6 +597,7 @@
   from{width: 0;}
   to{width: 9.1em;}
 }
+
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}

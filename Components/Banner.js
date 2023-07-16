@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Container,Row,Col } from 'react-bootstrap'
 import { FaFacebookSquare } from "react-icons/fa";
-import { AiFillLinkedin,AiOutlineTwitter } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
 
 const Banner = () => {
 
@@ -30,7 +31,7 @@ const Banner = () => {
                             </p>
 
 
-                            <Link href="/cv.pdf" download="cv">
+                            <Link href="/cv.pdf" download="cv" target='_blank'>
                                  <button  href="" className="glow-on-hover" type="button">Download Cv</button>
                             </Link>
 
@@ -46,9 +47,9 @@ const Banner = () => {
                               <AiFillLinkedin/>
 
                             </Link>
-                            <Link href="#">
+                            <Link href="https://github.com/Ibrahimcoderx" target='_blank'>
 
-                              <AiOutlineTwitter/>
+                              <BsGithub/>
 
                             </Link>
 
