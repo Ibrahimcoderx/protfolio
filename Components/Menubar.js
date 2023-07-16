@@ -44,7 +44,12 @@ const Menubar = () => {
 
                             <div className="ManubarItem3">
 
-                                <button className="glow-on-hover" >Hire Me</button>
+                                <Link href="#ContactUs">
+
+                                    <button className="glow-on-hover" >Hire Me</button>
+
+                                </Link>
+                              
 
                             </div>
 
