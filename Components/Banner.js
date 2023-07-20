@@ -31,7 +31,7 @@ const Banner = () => {
                             </p>
 
 
-                            <Link href="/cv.pdf" download="cv" target='_blank'>
+                            <Link href="/CV-of-IBRAHIM-HOSSAIN.pdf" download="cv" target='_blank'>
                                  <button  href="" className="glow-on-hover" type="button">Download Cv</button>
                             </Link>
 
